@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { connect } from "react-redux";
 import { setTitle } from "../store/actions/title";
 
-const Title = ({
+const TitleComp = ({
   title: {title},
   setTitle
 }) => {
@@ -27,4 +27,4 @@ const mapDispatchToProps = (dispatch) => ({
   setTitle: (payload) => dispatch(setTitle(payload))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Title)
+export default connect(mapStateToProps, mapDispatchToProps)(TitleComp)
