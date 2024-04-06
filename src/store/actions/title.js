@@ -1,0 +1,1 @@
+export const setTitle = (payload) => ({type: "SET_TITLE", payload});
